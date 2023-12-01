@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.column{
+    display: flex;
+    flex: 1;
+ }
+ .column-image{
+     margin-bottom: -5px;
+     min-width: 250px;
+     display: flex;
+ }
+ .column-image img {
+     border-radius: 10px 0px 0px 10px;
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+     object-position: center;
+ }
+ .column-container{
+     background-color: hsl(0, 0%, 100%);
+     border-radius: 0px 10px 10px 0px;
+     min-width: 250px;
+ }
+ .inner-column-container{
+     padding: 15px;
+     display: flex;
+     flex-direction: column;
+     justify-content:space-around;
+ }
+ .row{
+     margin: 5px;
+ }
+ .row-column{
+     display: flex;
+     align-items: center;
+ }
+ .attribution{
+     position: fixed;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     text-align: center;
+     margin-bottom: 5px;
+ }
+.montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+.row-column .montserrat{
+    margin-left: 10px;
+    font-size: 2vw;
+    text-decoration-line: line-through;
+}
+.row-column .fraunces{
+    color: hsl(158, 36%, 37%);
+    font-size: 3vw;
+}
+.fraunces{
+    font-family: 'Fraunces', serif;
+}
+.title{
+    font-size: 3vw;
+}
+.content{
+    font-size: 2vw;
+}
+.perfume{
+    font-weight: 300;
+    color: hsl(228, 12%, 48%);
+    font-size: 2vw;
+}
+.block{
+    font-size: px;
+    display: block;
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    text-align: center;
+    height: 30px;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+}
+.block:hover{
+    border-style:groove;
+}
+.block:active{
+    background-color: hsl(161, 35%, 19%);
+}
+.block img{
+    vertical-align: middle;
+    padding-right: 5px;
+}
+@media screen and (max-width: 807px){
+    .row-column .montserrat{
+        margin-left: 10px;
+        font-size: 15px;
+        text-decoration-line: line-through;
+    }
+    .row-column .fraunces{
+        color: hsl(158, 36%, 37%);
+        font-size: 25px;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .content{
+        font-size: 15px;
+    }
+    .perfume{
+        font-weight: 300;
+        color: hsl(228, 12%, 48%);
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 552px){
+    .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }   
+    .column-image img {
+        height: 250px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .column-container{
+        border-radius: 0px 0px 10px 10px;
+    }
+    .inner-column-container{
+        height: 300px;
+    }
+    .attribution{
+        display: none;
+    }
+}
