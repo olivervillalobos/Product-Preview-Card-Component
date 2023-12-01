@@ -60,26 +60,26 @@ body{
 }
 .row-column .montserrat{
     margin-left: 10px;
-    font-size: 2vw;
+    font-size: 15px;
     text-decoration-line: line-through;
 }
 .row-column .fraunces{
     color: hsl(158, 36%, 37%);
-    font-size: 3vw;
+    font-size: 30px;
 }
 .fraunces{
     font-family: 'Fraunces', serif;
 }
 .title{
-    font-size: 3vw;
+    font-size: 25px;
 }
 .content{
-    font-size: 2vw;
+    font-size: 18px;
 }
 .perfume{
     font-weight: 300;
     color: hsl(228, 12%, 48%);
-    font-size: 2vw;
+    font-size: 15px;
 }
 .block{
     font-size: px;
@@ -103,6 +103,28 @@ body{
     padding-right: 5px;
 }
 @media screen and (max-width: 807px){
+    .row-column .montserrat{
+        margin-left: 10px;
+        font-size: 15px;
+        text-decoration-line: line-through;
+    }
+    .row-column .fraunces{
+        color: hsl(158, 36%, 37%);
+        font-size: 25px;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .content{
+        font-size: 15px;
+    }
+    .perfume{
+        font-weight: 300;
+        color: hsl(228, 12%, 48%);
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 1100px){
     .row-column .montserrat{
         margin-left: 10px;
         font-size: 15px;
